@@ -7,7 +7,7 @@
 [![COCO](https://img.shields.io/badge/COCO-Continuation-green.svg)](https://sourceforge.net/projects/cocotools/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the official MATLAB implementation for the paper: **"Exact Nonlinear Model Reduction of Flexible Multibody Systems: From Steady-State Softening to Aperiodic Modal Interactions via 2D and 4D Spectral Submanifolds"** by Reza Nopour.
+This repository contains the official MATLAB implementation for the paper: **"XX"** by XX.
 
 ## 📌 Overview
 
@@ -16,10 +16,10 @@ The dynamic analysis of highly flexible multibody systems is characterized by th
 Traditional linear projection methods (like CMS) fail to capture amplitude-dependent dynamics such as centrifugal stiffening and resonance shifts. This repository provides a **mathematically rigorous, nonlinear reduced-order modeling framework** based on the theory of **Spectral Submanifolds (SSMs)**.
 
 ### ✨ Core Scientific Contributions
-1. **Exact Implicit Tensor Extraction Algorithm:** We introduce a novel algorithm that completely bypasses the catastrophic symbolic inversion of the deformation-dependent mass matrix $\mathbf{M}(\mathbf{q})$. By applying implicit differentiation directly to the governing force balance at the equilibrium, the $\mathcal{O}(2)$ and $\mathcal{O}(3)$ Taylor tensors are extracted with absolute mathematical precision.
+1. **Implicit Tensor Extraction Algorithm:** We study an algorithm that completely bypasses the catastrophic symbolic inversion of the deformation-dependent mass matrix $\mathbf{M}(\mathbf{q})$. By applying implicit differentiation directly to the governing force balance at the equilibrium, the $\mathcal{O}(2)$ and $\mathcal{O}(3)$ Taylor tensors are extracted with absolute mathematical precision.
 2. **Constrained DAE Reduction:** The framework successfully extends to closed-loop mechanisms (like the slider-crank) governed by index-3 Differential-Algebraic Equations (DAEs), utilizing a first-order descriptor state-space form.
 3. **Transient Chaos via 4D SSMs:** We demonstrate the topological necessity of 4D manifolds for capturing highly complex, aperiodic energy exchanges (transient chaos) in lightly damped regimes.
-4. **Pure Nonlinear "Bowl" Visualization:** The code mathematically isolates the pure nonlinear manifold curvature, geometrically proving the exact capture of velocity-squared centrifugal stiffening forces.
+4. **Nonlinear Visualization:** The code mathematically isolates the pure nonlinear manifold curvature, geometrically proving the exact capture of velocity-squared centrifugal stiffening forces.
 
 ---
 
@@ -43,9 +43,9 @@ For exact Full-Order Model (FOM) validation and numerical tracking of periodic o
 
 The repository is organized into three primary physical systems of increasing topological complexity. Each system includes a `build` script (for exact tensor extraction) and a `run` script (for SSM reduction, FRC plotting, and COCO validation).
 
-### 1. Single Flexible Link (`/Single_Link`)
+### 1. Single Flexible Link (`/OneFlexibleLink_FFRF_SSM`)
 *   `build_single_link_ffrf.m`: Extracts the exact tensors for the 4D state-space flexible pendulum.
-*   `SingleLink_SSM.m`: Computes the 2D SSM, extracts the softening backbone/FRC, and plots the pure nonlinear manifold "bowl".
+*   `OneFlexibleLink_FFRF_SSM.m`: Computes the 2D SSM, extracts the softening backbone/FRC, and plots the pure nonlinear manifold.
 
 ### 2. Double Flexible Pendulum (`/Double_Pendulum`)
 *   `build_double_link_ffrf.m`: Extracts exact tensors for the 8D state-space system.
