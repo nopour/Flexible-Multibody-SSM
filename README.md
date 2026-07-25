@@ -1,6 +1,6 @@
 # Flexible-Multibody-SSM
 
-# Exact Nonlinear Model Reduction of Flexible Multibody Systems via Spectral Submanifolds
+# Nonlinear Model Reduction of Flexible Multibody Systems via Spectral Submanifolds
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2022b%2B-blue.svg)](https://www.mathworks.com/)
 [![SSMTool](https://img.shields.io/badge/SSMTool-v2.4-orange.svg)](https://github.com/haller-group/SSMTool-2.4)
