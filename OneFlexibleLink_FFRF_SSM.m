@@ -83,7 +83,7 @@ figure('Name', 'FRC Comparison', 'Position', [100, 100, 800, 600], 'Color', 'w')
 set(S.FRCOptions, 'nCycle', 500, 'initialSolver', 'fsolve');
 set(S.contOptions, 'PtMX', 300, 'h_max', 0.1);
 
-% FIXED: Removed the invalid property injection.
+%
 set(S.FRCOptions, 'omegaSampStyle', 'cocoBD');
 set(S.FRCOptions, 'outdof', 1, 'method', 'continuation ep', 'p0', []);
 S.extract_FRC('freq', freqRange, [3, 5, 7, 11]);
