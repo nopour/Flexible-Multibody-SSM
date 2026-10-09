@@ -7,7 +7,7 @@
 [![COCO](https://img.shields.io/badge/COCO-Continuation-green.svg)](https://sourceforge.net/projects/cocotools/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the official MATLAB implementation for the paper: **"XX"** by XX.
+This repository contains the official MATLAB implementation for the paper: **"Model reduction of planar flexible multibody systems: spectral submanifold approach for floating frame of reference formulations"** submitted in the journal of Mechanism and Machine Theory.
 
 ## 📌 Overview
 
